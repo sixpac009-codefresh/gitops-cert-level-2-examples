@@ -52,13 +52,13 @@ jobs:
 
       - name: Copy container tag
         if:  ${{ inputs.promote_container }}
-        uses: sixpac009-codefresh/copy-file-action@master
+        uses: canastro/copy-file-action@master
         with:
           source: "environment-promotion/envs/${{ inputs.source_env }}/version.yml"
           target: "environment-promotion/envs/${{ inputs.target_env }}/version.yml"
       - name: Copy settings 
         if:  ${{ inputs.promote_configmaps }}
-        uses: sixpac009-codefresh/copy-file-action@master
+        uses: canastro/copy-file-action@master
         with:
           source: "environment-promotion/envs/${{ inputs.source_env }}/settings.yml"
           target: "environment-promotion/envs/${{ inputs.target_env }}/settings.yml"         
