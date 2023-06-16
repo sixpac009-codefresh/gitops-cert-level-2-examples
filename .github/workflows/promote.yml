@@ -62,6 +62,6 @@ jobs:
         with:
           source: "environment-promotion/envs/${{ inputs.source_env }}/settings.yml"
           target: "environment-promotion/envs/${{ inputs.target_env }}/settings.yml"         
-      - uses: stefanzweifel/git-auto-commit-action@v4
+      - uses: sixpac009-codefresh/git-auto-commit-action@v4
         with:
           commit_message: ${{ inputs.messsage }}    
