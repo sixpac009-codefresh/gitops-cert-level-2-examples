@@ -26,5 +26,6 @@ spec:
   - group: ""
     kind: Secret
     jsonPointers:
+    - /data
     - /stringData
    
