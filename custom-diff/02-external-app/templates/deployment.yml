@@ -4,8 +4,8 @@ kind: Deployment
 metadata:
   name: simple-deployment
   namespace: example02
-  annotations:
-    creation: at-{{ now | date "20160102150405" }}
+  #annotations:
+    #creation: at-{{ now | date "20160102150405" }}
 spec:
   selector:
     matchLabels:
